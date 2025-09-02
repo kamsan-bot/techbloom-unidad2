@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(8, 8, 8, 0.05);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 550;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #e7257d;
+}
+
+.hero-gradient {
+  background: linear-gradient(rgba(236, 65, 208, 0.75), rgba(42, 72, 206, 0.75)),
+    url("https://www.patrimoniocultural.gob.cl/sites/www.patrimoniocultural.gob.cl/files/styles/16x9_grande/public/2022-09/FOTO%202_.jpg?h=e72b5b4a&itok=pEGTH2Du")
+      no-repeat center center;
+  background-size: cover;
+  min-height: 85vh;
+  padding: 32px 0;
+}
+
+.page-title-section {
+  background: linear-gradient(
+    rgba(79, 106, 228, 0.75),
+    rgba(236, 65, 208, 0.75)
+  );
+  min-height: 40vh;
+  padding: 32px 0;
+}
+
+.btn-primary {
+  background-color: #fa8ac2;
+  border-color: #fc77b9;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 25px;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #f72585;
+  border-color: #f72585;
+  color: white;
+}
+
+.features .card,
+.features-card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.features .card:hover,
+.features-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1); /* 1rem = 16px, 3rem = 48px */
+}
+
+.feature-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.cta {
+  background-color: #ff69b4;
+  color: #fff;
+  padding: 64px 16px; /* 4rem = 64px, 1rem = 16px */
+}
+
+.cta .btn-light {
+  color: #ff69b4;
+  font-weight: 600;
+  padding: 12px 28px;
+}
+
+.page-title-section h1,
+.page-title-section p {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
