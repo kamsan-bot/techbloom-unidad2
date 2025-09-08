@@ -54,13 +54,13 @@ body {
 }
 
 .btn-primary {
-  background-color: #fa8ac2;
-  border-color: #fc77b9;
+  background-color: #fa5cab;
+  border-color: #fd6eb6;
   padding: 12px 28px;
   font-weight: 600;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   border-radius: 25px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .btn-primary:hover {
@@ -81,7 +81,7 @@ body {
 .features .card:hover,
 .features-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1); /* 1rem = 16px, 3rem = 48px */
+  box-shadow: 0 16px 48px rgba(36, 24, 24, 0.1); /* 1rem = 16px, 3rem = 48px */
 }
 
 .feature-icon img {
@@ -105,4 +105,14 @@ body {
 .page-title-section h1,
 .page-title-section p {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.btn-primarycol-lg-4 {
+  background-color: #fa5cab;
+  border-color: #fd6eb6;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 70px;
+  color: rgb(255, 255, 255);
 }
