@@ -16,3 +16,7 @@ aqui estamos usando **html, javascript y readme**
 1. Clonar el repositorio:  
    ```bash
    git clone <url-del-repositorio>
+
+**añadimos forms desde bootstrap**
+- usamos dos tal como se ordenaba
+- cambiamos de color
