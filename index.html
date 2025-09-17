@@ -69,7 +69,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <section
         class="hero-gradient d-flex align-items-center text-white text-center"
@@ -282,6 +281,52 @@
             © 2025 TechBloom. Todos los derechos reservados.
           </p>
         </div>
+      </div>
+      <div class="container mt-4">
+        <h2 class="mb-3">Registro</h2>
+        <form id="formRegistro" class="p-3 border rounded shadow-sm bg-light">
+          <div class="mb-3">
+            <input
+              type="text"
+              id="usuario"
+              class="form-control"
+              placeholder="Usuario"
+            />
+            <div id="Usuario" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="contraseña"
+              id="pass"
+              class="form-control"
+              placeholder="Contraseña"
+            />
+            <div id="text" class="form-text"></div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrar</button>
+        </form>
+
+        <h2 class="mt-5 mb-3">Contacto</h2>
+        <form id="Contacto" class="p-3 border rounded shadow-sm bg-light">
+          <div class="mb-3">
+            <input
+              type="email"
+              id="correo"
+              class="form-control"
+              placeholder="Correo electrónico"
+            />
+            <div id="Correo" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <textarea
+              id="mensaje"
+              class="form-control"
+              placeholder="Tu mensaje"
+            ></textarea>
+            <div id="Mensaje" class="form-text"></div>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Enviar</button>
+        </form>
       </div>
     </footer>
 

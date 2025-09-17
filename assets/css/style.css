@@ -116,3 +116,19 @@ body {
   border-radius: 70px;
   color: rgb(255, 255, 255);
 }
+
+.form-text {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  transform: translateY(-5px);
+}
+.form-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form-text.text-danger {
+  color: red;
+}
+.form-text.text-success {
+  color: #cc45d8;
+}
