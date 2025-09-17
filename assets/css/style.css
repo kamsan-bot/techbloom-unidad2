@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    sans-serif;
+  font-family: "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
+    "roboto", sans-serif;
 }
 
 .header {
@@ -81,7 +81,7 @@ body {
 .features .card:hover,
 .features-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 48px rgba(36, 24, 24, 0.1); /* 1rem = 16px, 3rem = 48px */
+  box-shadow: 0 16px 48px rgba(36, 24, 24, 0.1);
 }
 
 .feature-icon img {
@@ -93,7 +93,7 @@ body {
 .cta {
   background-color: #ff69b4;
   color: #fff;
-  padding: 64px 16px; /* 4rem = 64px, 1rem = 16px */
+  padding: 64px 16px;
 }
 
 .cta .btn-light {
@@ -130,5 +130,5 @@ body {
   color: red;
 }
 .form-text.text-success {
-  color: #cc45d8;
+  color: #cb30da;
 }
