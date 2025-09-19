@@ -243,6 +243,7 @@
                   id="formulario"
                   class="mx-auto shadow p-4 rounded bg-white animar"
                   style="max-width: 500px"
+                  novalidate
                 >
                   <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
@@ -250,7 +251,10 @@
                       type="text"
                       class="form-control"
                       id="nombre"
+                      name="nombre"
                       minlength="3"
+                      required
+                      placeholder="Ejemplo: tu correo electronico"
                     />
                     <div class="invalid-feedback">
                       Por favor ingresa un nombre válido (mínimo 3 caracteres).
@@ -264,7 +268,9 @@
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
                       required
+                      placeholder="Ejemplo: tucorreo@email.com"
                     />
                     <div class="invalid-feedback">
                       Ingresa un correo válido.
@@ -275,9 +281,11 @@
                     <textarea
                       class="form-control"
                       id="mensaje"
+                      name="mensaje"
                       rows="3"
                       required
                       minlength="10"
+                      placeholder="Cuéntanos por qué te gustaría unirte a TechBloom..."
                     ></textarea>
                     <div class="invalid-feedback">
                       El mensaje debe tener al menos 10 caracteres.

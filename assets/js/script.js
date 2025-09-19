@@ -43,42 +43,7 @@ console.assert(saludo === "holaaa"); // sin error
 console.log("despues de la asersion");
 console.log("fin del script");
 
-let form1 = document.forms[0]; // primer formulario
-if (form1) {
-  form1.addEventListener("submit", function(event) {
-    validarRegistro(event);
-  });
-  function validarRegistro(){
-  return false; 
-}
-console.log("decimos que la validacion es correcta");
-}
 
-function validarRegistro(){
-  let usuario = document.formRegistro.usuario.value;
-  let pass = document.formRegistro.pass.value;
-  let valido = true;
-
-  if(usuario.length < 3){
-    document.getElementById("msgUsuario").textContent = "mínimo 3 caracteres";
-    valido = false;
-  } else {
-    document.getElementById("msgUsuario").textContent = "correcto";
-  }
-
-  if(pass.length < 6){
-    document.getElementById("msgPass").textContent = "mínimo 6 caracteres";
-    valido = false;
-  } else {
-    document.getElementById("msgPass").textContent = "correcto";
-  }
-
-  if(valido === true){
-    alert("Registro exitoso");
-  }
-
-  return false;
-}
 
 function animarScroll() {
         const elementos = document.querySelectorAll(".animar");
