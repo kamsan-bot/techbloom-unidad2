@@ -235,54 +235,58 @@
                 Un espacio seguro, divertido y poderoso donde tus ideas importan
                 y tu voz es escuchada.
               </p>
-              <div class="container mt-4">
-                <h2 class="mb-3">Registro</h2>
-                <form id="formRegistro" class="p-3">
+              <div class="container">
+                <h2 class="text-center fw-bold mb-4 text-dark titulo-seccion">
+                  📝 registrate!
+                </h2>
+                <form
+                  id="formulario"
+                  class="mx-auto shadow p-4 rounded bg-white animar"
+                  style="max-width: 500px"
+                >
                   <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
                     <input
                       type="text"
-                      id="usuario"
                       class="form-control"
-                      placeholder="Usuario"
+                      id="nombre"
+                      minlength="3"
                     />
-                    <div id="Usuario" class="form-text"></div>
+                    <div class="invalid-feedback">
+                      Por favor ingresa un nombre válido (mínimo 3 caracteres).
+                    </div>
                   </div>
                   <div class="mb-3">
-                    <input
-                      type="contraseña"
-                      id="pass"
-                      class="form-control"
-                      placeholder="Contraseña"
-                    />
-                    <div id="text" class="form-text"></div>
-                  </div>
-                  <button type="submit" class="btn btn-primary w-100">
-                    Registrar
-                  </button>
-                </form>
-
-                <h2 class="mt-5 mb-3">Contacto</h2>
-                <form id="Contacto" class="p-3">
-                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
+                    >
                     <input
                       type="email"
-                      id="correo"
                       class="form-control"
-                      placeholder="Correo electrónico"
+                      id="email"
+                      required
                     />
-                    <div id="Correo" class="form-text"></div>
+                    <div class="invalid-feedback">
+                      Ingresa un correo válido.
+                    </div>
                   </div>
                   <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea
-                      id="mensaje"
                       class="form-control"
-                      placeholder="Tu mensaje"
+                      id="mensaje"
+                      rows="3"
+                      required
+                      minlength="10"
                     ></textarea>
-                    <div id="Mensaje" class="form-text"></div>
+                    <div class="invalid-feedback">
+                      El mensaje debe tener al menos 10 caracteres.
+                    </div>
                   </div>
-                  <button type="submit" class="btn btn-success w-100">
+                  <button type="submit" class="btn btn-dark w-100">
                     Enviar
                   </button>
+                  <div id="respuesta" class="mt-3 text-center fw-bold"></div>
                 </form>
               </div>
             </div>
