@@ -132,3 +132,25 @@ body {
 .form-text.text-success {
   color: #cb30da;
 }
+.footer-icons a {
+  text-decoration: none;
+}
+
+.img-valor {
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+} 
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.card');
+  const aparecer = () => {
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        card.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', aparecer);
+  aparecer();
+});
