@@ -150,3 +150,14 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
   }
+
+  .card.h-100.text-center.shadow-sm, .card.h-100.text-center.shadow-sm img,
+  .card.h-100.p-3.shadow-sm, .card.h-100.p-3.shadow-sm img {
+        border-radius: 18px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card.h-100.text-center.shadow-sm:hover,
+  .card.h-100.p-3.shadow-sm:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
