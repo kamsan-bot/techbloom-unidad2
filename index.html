@@ -237,7 +237,7 @@
               </p>
               <div class="container">
                 <h2 class="text-center fw-bold mb-4 text-dark titulo-seccion">
-                  📝 registrate!
+                  📝 ¡Regístrate!
                 </h2>
                 <form
                   id="formulario"
@@ -254,7 +254,7 @@
                       name="nombre"
                       minlength="3"
                       required
-                      placeholder="Ejemplo: tu correo electronico"
+                      placeholder="Ejemplo: tu nombre"
                     />
                     <div class="invalid-feedback">
                       Por favor ingresa un nombre válido (mínimo 3 caracteres).
@@ -296,6 +296,44 @@
                   </button>
                   <div id="respuesta" class="mt-3 text-center fw-bold"></div>
                 </form>
+                <div class="mt-4">
+                  <h5 class="fw-bold">Usuarios registrados:</h5>
+                  <ul id="lista-registros" class="list-group"></ul>
+                </div>
+                <hr class="my-5">
+                <h2 class="text-center fw-bold mb-4 text-dark titulo-seccion">
+                  💡 Sugerencias para TechBloom
+                </h2>
+                <form
+                  id="form-sugerencia"
+                  class="mx-auto shadow p-4 rounded bg-white animar"
+                  style="max-width: 500px"
+                  novalidate
+                >
+                  <div class="mb-3">
+                    <label for="sugerencia" class="form-label">Tu sugerencia</label>
+                    <textarea
+                      class="form-control"
+                      id="sugerencia"
+                      name="sugerencia"
+                      rows="2"
+                      required
+                      minlength="5"
+                      placeholder="¿Qué te gustaría ver en TechBloom?"
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      La sugerencia debe tener al menos 5 caracteres.
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Enviar sugerencia
+                  </button>
+                  <div id="respuesta-sugerencia" class="mt-3 text-center fw-bold"></div>
+                </form>
+                <div class="mt-4">
+                  <h5 class="fw-bold">Sugerencias recibidas:</h5>
+                  <ul id="lista-sugerencias" class="list-group"></ul>
+                </div>
               </div>
             </div>
           </div>
